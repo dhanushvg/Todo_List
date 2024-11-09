@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta>
+<head>
+<title>To-Do list</title>
+<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>To-do-List</h1>
+        <ul>
+            <li>Sign Up</li>
+            <li>About us</li>
+        </ul>
+    </header>
+    
+    <div id="head">
+       
+        <div id="searchSection">
+            <label for="inputField">
+            <input type="text" id="inputField"/>
+            </label>
+            <button id="addTask">Add task</button>
+            <p id="alreadyTaskExist"></p>
+        </div>
+
+    <div class="taskContainer">
+        <ul id="taskStock">
+            <div class="newEmptyList">
+                <li class="taskList">Wake up Earlier</li>
+                <div>
+                <button class="CompleteButton" onclick="completedAction(event)">Completed</button>
+                 <button class="removeButton" onclick="removeTask(event)">Delete</button>
+                 </div>
+            </div >
+            <div class="newEmptyList">
+                <li class="taskList">Sleep at Time</li>
+                <div>
+                <button class="CompleteButton" onclick="completedAction(event)">Completed</button>
+            <button class="removeButton" onclick="removeTask(event)">Delete</button>
+                 </div>
+            </div>
+            <div class="newEmptyList">
+                <li class="taskList">Study for 3 hours</li>
+                <div>
+                <button class="CompleteButton" onclick="completedAction(event)">Completed</button>
+            <button class="removeButton" onclick="removeTask(event)">Delete</button>
+            </div>
+            </div>
+            <div class="newEmptyList">
+                <li class="taskList">learn new things</li>
+                <div>
+                <button class="CompleteButton" onclick="completedAction(event)">Completed</button>
+            <button class="removeButton" onclick="removeTask(event)">Delete</button>
+            </div>
+        </div>
+    </ul>
+    <p id="emptyList"></p>
+    </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
